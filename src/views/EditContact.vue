@@ -353,6 +353,8 @@ export default {
           // console.log("from edit page ---->", this.contact);
           // console.log("gpt from edit page response ---->", response);
 
+          await this.$store.dispatch('clearHomeAction')
+
           if (response) {
             this.loading = false;
             // console.log("ok---------> Updated");

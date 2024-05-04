@@ -304,6 +304,7 @@ export default {
           // if (currentRoute.path !== "/") {
           //     this.$router.push("/"); // Navigate to the page
           // }
+          await this.$store.dispatch('clearHomeAction')
 
           if (response) {
             // console.log("ok---------> Created");
